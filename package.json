@@ -1,0 +1,33 @@
+{
+  "name": "rss-tweet-bot",
+  "version": "0.1.0",
+  "description": "📰 Twitter Bot to easily tweet random RSS feed links",
+  "main": "lib/rss-tweet-bot.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnfoderaro/rss-tweet-bot"
+  },
+  "keywords": [
+    "tweet bot",
+    "twitter bot",
+    "tweet rss feed links",
+    "share rss feed links",
+    "rss link sharing bot"
+  ],
+  "author": "John Foderaro <johnfoderaro@icloud.com>",
+  "license": "MIT",
+  "readmeFilename": "readme.md",
+  "dependencies": {
+    "daychange": "^1.0.4",
+    "feed-read": "0.0.1",
+    "make-random": "^0.1.4",
+    "twit": "^2.2.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
+  }
+}

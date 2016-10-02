@@ -33,12 +33,16 @@ const rss = options.rss;
 describe(`searchRss function`, () => {
   it(`Should return an object`, () => {
     let result;
-    searchRss(feed, rss, data => result = data);
+    searchRss(feed, rss, (error, data) => {
+      result = data;
+    });
     expect(result).to.be.an('object');
   });
   it(`Should return an object with properties 'date', 'title, 'link'`, () => {
     let result;
-    searchRss(feed, rss, data => result = data);
+    searchRss(feed, rss, (error, data) => {
+      result = data;
+    });
     expect(result).to.have.property('date');
     expect(result).to.have.property('title');
     expect(result).to.have.property('link');

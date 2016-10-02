@@ -1,6 +1,6 @@
 {
   "name": "rss-tweet-bot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "📰 Twitter Bot to easily tweet random RSS feed links",
   "main": "lib/rss-tweet-bot.js",
   "scripts": {

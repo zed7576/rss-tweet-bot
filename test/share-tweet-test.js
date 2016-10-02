@@ -38,7 +38,9 @@ describe(`shareTweet function`, () => {
       title: 'Title',
       link: 'http://t.co/12345678901'
     };
-    shareTweet(twitter, tweet, item, data => result = data);
+    shareTweet(twitter, tweet, item, (error, data) => {
+      result = data;
+    });
     expect(result).to.be.a('string');
   });
   it(`Should truncate lengthy tweets`, () => {
@@ -48,7 +50,9 @@ describe(`shareTweet function`, () => {
       title: 'This is an incredibly long title that we want to make sure gets properly truncated, as it is clearly going over the character limit!',
       link: 'http://t.co/12345678901'
     };
-    shareTweet(twitter, tweet, item, data => result = data);
+    shareTweet(twitter, tweet, item, (error, data) => {
+      result = data;
+    });
     expect(result.length).to.be.at.most(172);
   });
 });
